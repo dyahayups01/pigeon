@@ -1,79 +1,31 @@
 <x-app-layout>
-    <div class="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+    <div class="container mx-auto p-6">
+        <!-- Header -->
+        <header class="mb-6">
+            <h1 class="text-3xl font-bold">PIGEON BPS Kabupaten Kepulauan Meranti</h1>
+            <p class="mt-2 text-gray-600">Sistem Pigeon di BPS Kabupaten Kepulauan Meranti adalah platform komprehensif untuk manajemen kepegawaian dan penilaian performa pegawai. Terdiri dari tiga modul utama: Kepegawaian, Performa, dan Evaluasi Performa, sistem ini memungkinkan pengelolaan data pegawai, pencatatan dan analisis performa, serta evaluasi dan perankingan berdasarkan kinerja. Modul Kepegawaian menangani informasi detail pegawai dan riwayat pekerjaan, modul Performa mencatat data performa harian hingga bulanan dengan fitur input manual dan impor Excel, serta modul Evaluasi Performa menghitung variabel baru seperti absensi dan skor performa untuk menentukan ranking pegawai. Dengan desain yang konsisten dan fitur yang komprehensif, Pigeon membantu BPS dalam meningkatkan efisiensi dan akurasi penilaian kinerja pegawai.</p>
+        </header>
+
         
-        <!-- Welcome banner -->
-        <x-dashboard.welcome-banner />
 
-        <!-- Dashboard actions -->
-        <div class="sm:flex sm:justify-between sm:items-center mb-8">
-
-            <!-- Left: Avatars -->
-            <x-dashboard.dashboard-avatars />
-
-            <!-- Right: Actions -->
-            <div class="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
-
-                <!-- Filter button -->
-                <x-dropdown-filter align="right" />
-
-                <!-- Datepicker built with flatpickr -->
-                <x-datepicker />
-
-                <!-- Add view button -->
-                <button class="btn bg-indigo-500 hover:bg-indigo-600 text-white">
-                    <svg class="w-4 h-4 fill-current opacity-50 shrink-0" viewBox="0 0 16 16">
-                        <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z" />
-                    </svg>
-                    <span class="hidden xs:block ml-2">Add View</span>
-                </button>
-                
-            </div>
-
-        </div>
-        
-        <!-- Cards -->
-        <div class="grid grid-cols-12 gap-6">
-
-            <!-- Line chart (Acme Plus) -->
-            <x-dashboard.dashboard-card-01 :dataFeed="$dataFeed" />
-
-            <!-- Line chart (Acme Advanced) -->
-            <x-dashboard.dashboard-card-02 :dataFeed="$dataFeed" />
-
-            <!-- Line chart (Acme Professional) -->
-            <x-dashboard.dashboard-card-03 :dataFeed="$dataFeed" />
-
-            <!-- Bar chart (Direct vs Indirect) -->
-            <x-dashboard.dashboard-card-04 />
-
-            <!-- Line chart (Real Time Value) -->
-            <x-dashboard.dashboard-card-05 />
-
-            <!-- Doughnut chart (Top Countries) -->
-            <x-dashboard.dashboard-card-06 />
-
-            <!-- Table (Top Channels) -->
-            <x-dashboard.dashboard-card-07 />
-
-            <!-- Line chart (Sales Over Time)  -->
-            <x-dashboard.dashboard-card-08 />
-
-            <!-- Stacked bar chart (Sales VS Refunds) -->
-            <x-dashboard.dashboard-card-09 />
-
-            <!-- Card (Customers)  -->
-            <x-dashboard.dashboard-card-10 />
-
-            <!-- Card (Reasons for Refunds)   -->
-            <x-dashboard.dashboard-card-11 />             
-
-            <!-- Card (Recent Activity) -->
-            <x-dashboard.dashboard-card-12 />
-            
-            <!-- Card (Income/Expenses) -->
-            <x-dashboard.dashboard-card-13 />
-
-        </div>
-
+        <!-- Penjelasan Sistem 
+        <section class="mt-6">
+            <h2 class="text-2xl font-semibold mb-4">Penjelasan Sistem</h2>
+            <p class="text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel turpis vitae nisl feugiat dapibus. Nulla facilisi. Cras imperdiet quam ut enim lacinia, sit amet consectetur tortor fermentum. Integer a urna et augue tincidunt lacinia. Quisque vitae turpis bibendum, fermentum nisi id, elementum nunc. Proin sit amet justo ac libero dignissim consequat.
+            </p>
+        </section> -->
     </div>
+</body>
+</html>
+
 </x-app-layout>
